@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  font-size: 1.6rem;
+  color: #4e42d4;
+  background: white;
+  transition: all .15s ease-in-out;
+}
+
+body.light ::selection {
+    background-color: pink;
+}
+
+hr {
+  margin: 0 auto;
+  width: 20rem;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 5rem 0 0 0;
+  width: 40rem;
+  position: relative;
+}
+
+h1 {
+  margin-bottom: 3rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  text-align: center;
+}
+
+hr {
+  border: .1rem solid #111;
+}
+
+p {
+  margin-top: 3rem;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.btn-toggle {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background: pink;
+  position: absolute;
+  top: 7rem;
+  left: -10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 .5rem .9rem rgba(0, 0, 0, .2);
+}
+
+.btn-toggle i {
+  font-size: 2rem;
+}
+
+/* Dark Mode */
+
+body.dark {
+  color: #786ded;
+  background: #212121;
+}
+
+body.dark ::selection {
+  background: #111;
+}
+
+body.dark .btn-toggle {
+  color: #999;
+  background: #111;
+}
